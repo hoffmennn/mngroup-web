@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mngroup.sk | Vytvoríme prehľad riešení pre váš finančný komfort.</title>
+  <meta name="description" content="Poistenie, sporenie v zlate, hypotéky a úvery. Bezplatná konzultácia v Prešove, Kežmarku, Bratislave alebo online.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--   Formulár: správy prídu na info@mngroup.sk. Netreba žiadnu registráciu ani úpravy na hostingu.
+  - Musíš urobiť jeden krok: keď bude web online, pošli raz cez formulár testovaciu správu. FormSubmit potom pošle na info@mngroup.sk aktivačný e-mail a v ňom treba kliknúť na
+    potvrdenie. Až potom začnú správy chodiť.
+  - Správa príde s predmetom „Nová správa z webu mngroup.sk“ a údaje v nej budú v prehľadnej tabuľke.
+  - Proti spamu je vo formulári skryté pole, ktoré vyplnia len roboty.
+  - Po odoslaní sa návštevníkovi ukáže ďakovná stránka FormSubmitu. Ak chceš, môžem urobiť vlastnú ďakovnú stránku v dizajne webu.
+
+  Formulár funguje len na webe nahratom na serveri. Keď si index.html otvoríš priamo z počítača, správa sa neodošle.-->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <ul class="quick-links">
+        <li>
+          <a href="https://www.uniqa.sk/online/poistenie-vozidla/?obtainer=70621102" target="_blank" rel="noopener" title="Poistenie vozidla (PZP)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11m-14 0h14m-14 0a2 2 0 0 0-2 2v3h2m14-5a2 2 0 0 1 2 2v3h-2M5 16v2h2v-2m10 0v2h2v-2M7 16h10"/><circle cx="7.5" cy="13.5" r=".5"/><circle cx="16.5" cy="13.5" r=".5"/></svg>
+            <span class="sr-only">Poistenie vozidla</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.uniqa.sk/online/poistenie-majetku/?obtainer=70621102" target="_blank" rel="noopener" title="Poistenie majetku">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 9.5V20h5v-6h4v6h5V9.5"/></svg>
+            <span class="sr-only">Poistenie majetku</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://online.uniqa.sk/cestovne-poistenie-kalkulacka/?obtainer=70621102" target="_blank" rel="noopener" title="Cestovné poistenie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 13.5L3 11l1.5-1.5 8 1 4-4.5a2.1 2.1 0 0 1 3 3l-4.5 4 1 8L14.5 22 12 14.5l-3 3V20l-1.5 1.5-1-3.5-3.5-1L4.5 15.5H7z"/></svg>
+            <span class="sr-only">Cestovné poistenie</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://online.uniqa.sk/poistenie-zamestnanca-voci-zamestnavatelovi-kalkulacka/?obtainer=70621102" target="_blank" rel="noopener" title="Poistenie zodpovednosti zamestnanca">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.7a3.5 3.5 0 0 1 0 6.6M18 14.4c2 .8 3.5 2.8 3.5 5.6"/></svg>
+            <span class="sr-only">Poistenie zodpovednosti zamestnanca</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="topbar__phone" href="tel:+421905433433">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        +421 905 433 433
+      </a>
+    </div>
+  </div>
+
+  <!-- Hlavička -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="/">
+        <img src="images/zlaty-logotyp-mn-group.png" alt="MN Group" width="68" height="68">
+        <span class="brand__claim">Vytvoríme prehľad riešení pre váš finančný komfort.</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#kontakt">Chcem pôžičku alebo Hypo úver</a>
+        <a class="btn btn--gold" href="#kontakt">Sporenie<br>v zlate</a>
+        <a class="btn btn--gray" href="#poistne-udalosti">Spracovanie<br>poistných udalostí</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Úvod -->
+    <section class="section intro">
+      <div class="container intro__grid">
+        <div class="intro__text">
+          <h1 class="lead-title">Neplaťte viac, ako musíte – získajte tretí názor!</h1>
+
+          <p>Využite naše dlhoročné skúsenosti v poisťovníctve a bankovníctve a získajte odborné riešenie na mieru. Po osobnej, telefonickej alebo online konzultácii vám <strong>zdarma</strong> pripravíme optimálne produktové riešenie.</p>
+
+          <p><strong>Poistenie, sporenie na dôchodok, hypotekárny úver, spotrebný úver</strong> – nepreplácajte zbytočne!<br>
+            <strong>Využite štátnu podporu a ušetrite!</strong></p>
+
+          <p>Kontaktujte nás – zavolajte alebo napíšte e-mail a dohodnite si stretnutie. Radi vás privítame v našich kanceláriách v <strong>Prešove</strong>, <strong>Kežmarku</strong> a <strong>Bratislave</strong>, alebo vám poradíme online.</p>
+
+          <p><strong>Plaťte len za to, čo naozaj využijete!</strong></p>
+
+          <div class="btn-row">
+            <a class="btn btn--gold" href="https://www.uniqa.sk/online/poistenie-vozidla/?obtainer=70621102" target="_blank" rel="noopener">Poistenie PZP online</a>
+            <a class="btn btn--light" href="#kontakt">Odoslať e-mail</a>
+          </div>
+        </div>
+
+        <div class="intro__images">
+          <a href="#kontakt"><img src="images/image-1.ws-intense-next-blank.jpg" alt="Konzultácia s finančným poradcom" loading="lazy"></a>
+          <a href="#kontakt"><img src="images/image-2.ws-intense-next-blank.jpg" alt="Pracovné miesto s notebookom" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Služby -->
+    <section class="section services" id="sluzby">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="title">Poistenie, Sporenie, Úvery</h2>
+          <p>Ponúkame inovatívne riešenia, ktoré šetria váš čas a peniaze.<br>
+            Neváhajte nás kontaktovať telefonicky alebo emailom – vašu požiadavku vybavíme okamžite!</p>
+        </header>
+
+        <div class="cards">
+          <a class="card" href="#kontakt">
+            <img src="images/messenger_creation_71e79466-c063-4cce-81c8-8cac15c752e8.jpeg" alt="Poistenie" loading="lazy">
+            <div class="card__body">
+              <h3>Poistenie</h3>
+              <p>„Poistenie je ako záchranná sieť – ak ju nemáte, keď padáte, už je neskoro prosiť, aby tam bola.“</p>
+            </div>
+          </a>
+          <a class="card" href="#kontakt">
+            <img src="images/mince-zlate.jpg" alt="Investičné zlaté mince" loading="lazy">
+            <div class="card__body">
+              <h3>Sporenie v zlate</h3>
+              <p>„Flexibilné sporenie do fyzického investičného zlata vo forme najpredávanejších investičných mincí sveta Wiener Philharmoniker už od 20 € mesačne.“</p>
+            </div>
+          </a>
+          <a class="card" href="#kontakt">
+            <img src="images/dom-hypoteka-kupa-domu-kupna-zmluva-clanokw.jpg" alt="Hypotéka a úvery" loading="lazy">
+            <div class="card__body">
+              <h3>Úvery</h3>
+              <p>„Život nás niekedy núti požičať si. Ale podmienky si môžete vybrať také, ktoré vám nevezmú pokoj.“</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="btn-row btn-row--center">
+          <a class="btn btn--gold" href="#kontakt">Jednoducho a rýchlo</a>
+          <a class="btn btn--light" href="#kontakt">Odoslať e-mail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poistné udalosti -->
+    <section class="section claims" id="poistne-udalosti">
+      <div class="container">
+        <div class="claims__box">
+          <h2 class="title">Spracovanie poistných udalostí</h2>
+          <p class="claims__lead">V prípade vzniku poistnej udalosti sme tu, aby sme vám celý proces uľahčili a vybavili všetky potrebné kroky za vás. Nemusíte sa zaťažovať zložitou administratívou ani komunikáciou s poisťovňou – postaráme sa o všetko od nahlásenia až po ukončenie konania.</p>
+
+          <ul class="star-list">
+            <li><strong>Nahlásenie poistnej udalosti</strong> – pomôžeme vám s prípravou a odoslaním všetkých potrebných dokumentov.</li>
+            <li><strong>Komunikácia s poisťovňou</strong> – zastúpime vás pri riešení, aby ste ušetrili čas a nervy.</li>
+            <li><strong>Dokumentácia a dôkazy</strong> – poradíme vám, aké podklady sú potrebné, a zabezpečíme ich kompletné spracovanie.</li>
+            <li><strong>Rýchle vybavenie</strong> – sledujeme postup likvidácie a dbáme na to, aby ste dostali plnenie v čo najkratšom čase.</li>
+            <li><strong>Podpora a poradenstvo</strong> – v každom kroku vám vysvetlíme postup a odporučíme najlepšie riešenie.</li>
+          </ul>
+
+          <a class="btn btn--gold" href="#kontakt">Odoslať e-mail</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Čím sa odlišujeme -->
+    <section class="section why">
+      <div class="container why__grid">
+        <div>
+          <h2 class="title">Čo nás odlišuje od ostatných</h2>
+          <p>Naším cieľom nie je len poskytnúť službu, ale priniesť riešenie, ktoré vám skutočne uľahčí život. Každého klienta vnímame individuálne a hľadáme pre neho najvýhodnejšie a najrýchlejšie možnosti.</p>
+          <a class="btn btn--gold" href="#kontakt">Odoslať e-mail</a>
+        </div>
+
+        <ul class="star-list">
+          <li><strong>Osobný prístup</strong> – venujeme vám čas a pozornosť, ktorú si zaslúžite.</li>
+          <li><strong>Rýchlosť a spoľahlivosť</strong> – vieme, že váš čas je dôležitý.</li>
+          <li><strong>Dlhoročné skúsenosti</strong> – rozumieme detailom a vieme predvídať problémy.</li>
+          <li><strong>Transparentnosť</strong> – vždy jasne vysvetlíme postup a podmienky.</li>
+          <li><strong>Komplexné riešenia</strong> – vybavíme všetko od A po Z, aby ste sa mohli sústrediť na to podstatné.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section contact" id="kontakt">
+      <div class="container contact__grid">
+        <div class="contact__form-wrap">
+          <h2 class="title">Neplaťte viac, ako musíte – získajte tretí názor!</h2>
+          <p>Zistite kde viete ušetriť na hypotéke, poistení alebo sporení. Stačí kliknúť a vyplniť formulár – nezáväzne.</p>
+
+          <!-- Formulár odosiela cez FormSubmit.co (zadarmo). Prvé odoslanie pošle na info@mngroup.sk aktivačný e-mail, ktorý treba potvrdiť. -->
+          <form class="form" action="https://formsubmit.co/info@mngroup.sk" method="post">
+            <input type="hidden" name="_subject" value="Nová správa z webu mngroup.sk">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label for="f-name">Meno</label>
+            <input id="f-name" name="meno" type="text" placeholder="Zadajte svoje krstné meno" required>
+
+            <label for="f-email">E-mail</label>
+            <input id="f-email" name="email" type="email" placeholder="Zadajte svoj e-mail" required>
+
+            <label for="f-msg">Správa</label>
+            <textarea id="f-msg" name="sprava" rows="5" placeholder="Napíšte svoju správu" required></textarea>
+
+            <button class="btn btn--gold" type="submit">Potvrdiť</button>
+          </form>
+        </div>
+
+        <aside class="contact__info">
+          <h3>Chcete poistenie rýchlo a jednoducho?</h3>
+          <p>Stačí kliknúť na ikonu <strong>auto, dom, dovolenka</strong> alebo <strong>zodpovednosť</strong> a poistenie si vybavíte online okamžite! Neváhajte nás kontaktovať telefonicky alebo emailom – vašu požiadavku vybavíme bez zbytočného čakania!</p>
+
+          <ul class="contact__list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              <a href="tel:+421905433433">+421 905 433 433</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <a href="mailto:info@mngroup.sk">info@mngroup.sk</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span>9:00 – 16:00</span>
+            </li>
+          </ul>
+
+          <ul class="quick-links quick-links--big">
+            <li><a href="https://www.uniqa.sk/online/poistenie-vozidla/?obtainer=70621102" target="_blank" rel="noopener" title="Auto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11m-14 0h14m-14 0a2 2 0 0 0-2 2v3h2m14-5a2 2 0 0 1 2 2v3h-2M5 16v2h2v-2m10 0v2h2v-2M7 16h10"/></svg><span>Auto</span></a></li>
+            <li><a href="https://www.uniqa.sk/online/poistenie-majetku/?obtainer=70621102" target="_blank" rel="noopener" title="Dom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7M5 9.5V20h5v-6h4v6h5V9.5"/></svg><span>Dom</span></a></li>
+            <li><a href="https://online.uniqa.sk/cestovne-poistenie-kalkulacka/?obtainer=70621102" target="_blank" rel="noopener" title="Dovolenka"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 13.5L3 11l1.5-1.5 8 1 4-4.5a2.1 2.1 0 0 1 3 3l-4.5 4 1 8L14.5 22 12 14.5l-3 3V20l-1.5 1.5-1-3.5-3.5-1L4.5 15.5H7z"/></svg><span>Dovolenka</span></a></li>
+            <li><a href="https://online.uniqa.sk/poistenie-zamestnanca-voci-zamestnavatelovi-kalkulacka/?obtainer=70621102" target="_blank" rel="noopener" title="Zodpovednosť"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.7a3.5 3.5 0 0 1 0 6.6M18 14.4c2 .8 3.5 2.8 3.5 5.6"/></svg><span>Zodpovednosť</span></a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="images/zlaty-logotyp-mn-group.png" alt="MN Group" width="48" height="48">
+      <p>© <span id="year">2026</span> MN Group · <a href="tel:+421905433433">+421 905 433 433</a> · <a href="mailto:info@mngroup.sk">info@mngroup.sk</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

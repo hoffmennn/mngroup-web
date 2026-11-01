@@ -1,0 +1,8 @@
+# IDE
+.idea/
+
+# Ulozena kopia povodneho webu (len referencia)
+mngroup.sk _*
+
+# Originaly obrazkov pred upravou
+images/_originaly/

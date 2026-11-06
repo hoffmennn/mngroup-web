@@ -288,5 +288,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round
   .brand img { width: 52px; }
   .btn-row .btn { flex: 1 1 100%; }
   .contact__info { padding: 28px 20px; }
+  .quick-links--big { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .quick-links--big a { width: auto; height: 84px; }
   .footer__inner { flex-direction: column; text-align: center; }
 }

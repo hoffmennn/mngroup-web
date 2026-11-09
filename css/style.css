@@ -225,6 +225,11 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round
 .form textarea:focus { outline: 2px solid var(--gold); outline-offset: -1px; border-color: transparent; }
 .form textarea { resize: vertical; }
 .form .btn { justify-self: start; }
+.form .btn:disabled { opacity: .6; cursor: wait; }
+.form__status { margin: 12px 0 0; padding: 12px 16px; border-radius: var(--radius); font-weight: 500; }
+.form__status--ok { background: var(--gold-light); color: var(--text); border-left: 4px solid var(--gold); }
+.form__status--error { background: #fdecea; color: #8a1c13; border-left: 4px solid #c0392b; }
+.form__status a { color: inherit; font-weight: 600; }
 
 .contact__info {
   align-self: start;
